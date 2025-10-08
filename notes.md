@@ -15,3 +15,4 @@ _____nome______     _____Produto____            ______Venda_____
 **Quanto maior as tabelas mais demorada as requisões dentro do bd criado**
 
 NoSQL: Armazema informação em um tipo de documento diferentes, como o json, se destaca pela *velocidade e consegue armazenar ainda mais dados* tal quantidade se e superior de uma SQL
+Ex: Redes Socias: X, Facebook, Instagram, armazenam as prefências de seus usuários em Database *NoSQL( Não relacionais)*
