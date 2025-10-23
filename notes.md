@@ -16,3 +16,10 @@ _____nome______     _____Produto____            ______Venda_____
 
 NoSQL: Armazema informação em um tipo de documento diferentes, como o json, se destaca pela *velocidade e consegue armazenar ainda mais dados* tal quantidade se e superior de uma SQL
 Ex: Redes Socias: X, Facebook, Instagram, armazenam as prefências de seus usuários em Database *NoSQL( Não relacionais)*
+
+# Conceitos
+*Primary Key* -  é chave identificadora dentro de uma tabela
+*Foreign Key* - é uma chave estrangeira que vem de outra tabela
+*Coluna* -  cada tipo de dado que obtem atributos dentro
+*Tupla* - são dados dentro de uma linha de uma tabela
+*Data value* - é um valor especifico dentro de uma tupla
