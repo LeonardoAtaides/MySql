@@ -23,3 +23,7 @@ Ex: Redes Socias: X, Facebook, Instagram, armazenam as prefências de seus usuá
 *Coluna* -  cada tipo de dado que obtem atributos dentro
 *Tupla* - são dados dentro de uma linha de uma tabela
 *Data value* - é um valor especifico dentro de uma tupla
+
+# Comandos
+
+*USE* - seleciona o banco de dados desejado   |   Ex: USE Banco_Exemplo
