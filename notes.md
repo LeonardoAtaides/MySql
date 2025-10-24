@@ -26,4 +26,13 @@ Ex: Redes Socias: X, Facebook, Instagram, armazenam as prefências de seus usuá
 
 # Comandos
 
-*USE* - seleciona o banco de dados desejado   |   Ex: USE Banco_Exemplo
+*USE* - seleciona o banco de dados desejado   |     Ex: USE Banco_Exemplo
+
+*FROM* - destina da onde o dado vai vir, usado geralmente com *SELECT*
+
+*SELECT* - seleciona algo desejado            |     Ex: SELECT CLIENT_ID FROM CLIENT
+- Pode passar mais de uma coluna para trazer os dados dentro delas
+Ex: SELECT ID, NAME, YEARS FROM CLIENT
+
+- Pode listar também todas ao mesmo tempo
+Ex: SELECT * FROM CLIENT
