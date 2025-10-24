@@ -36,3 +36,7 @@ Ex: SELECT ID, NAME, YEARS FROM CLIENT
 
 - Pode listar também todas ao mesmo tempo
 Ex: SELECT * FROM CLIENT
+
+*ORDER BY*- organiza os dados dentro de uma tabela , geralmente usado com select
+Ex: SELECT actor_id, first_name, last_name FROM actor ORDER BY first_name;
+
