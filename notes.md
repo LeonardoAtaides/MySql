@@ -31,6 +31,12 @@ maior que -- >
 menor que -- <
 maior ou igual --  <=  |  >=
 menos --   -
+e --  AND
+ou -- OR
+não -- NOT com estado de negação
+
+Busca com *Operadores*:
+Ex: SELECT * FROM customer WHERE store_id = 1 AND active != 0;
 
 # Comandos
 
@@ -45,19 +51,21 @@ Ex: SELECT ID, NAME, YEARS FROM CLIENT
 - Pode listar também todas ao mesmo tempo
 Ex: SELECT * FROM CLIENT
 
-*ORDER BY*- ordena os dados dentro de uma tabela , geralmente usado com select
+*ORDER BY*- ordena os dados dentro de uma tabela , geralmente usado com SELECT
 Ex: SELECT actor_id, first_name, last_name FROM actor ORDER BY first_name;
 
 - Temos como filtar pelo maior e menor  Ex: ORDER BT amount ( desc or asc )
-- *asc* - do menor para maior
-- *desc* - do maior para o menor
+- *ASC* - do menor para maior
+- *DESC* - do maior para o menor
 
 *WHERE* - direciona onde buscar o dado, passando oque deseja buscar, tanto como  strings quanto valores númericos
-Ex: select * from actor where actor_id = 1;
-    select * from address where district = 'California';
+Ex: SELECT * FROM actor where actor_id = 1;
+    SELECT * FROM address where district = 'California';
+
+
 
 *AS* pode nomear uma tabela criada apartir de outra
 Ex: 
-select customer_id, amount,
- amount  - (amount * 0.10) as '10% discount' -> passa o nome desejado
- from payment where customer_id = 1;
+SELECT customer_id, amount,
+ amount  - (amount * 0.10) AS '10% discount' -> passa o nome desejado
+ FROM payment WHERE customer_id = 1;
