@@ -24,6 +24,14 @@ Ex: Redes Socias: X, Facebook, Instagram, armazenam as prefências de seus usuá
 *Tupla* - são dados dentro de uma linha de uma tabela
 *Data value* - é um valor especifico dentro de uma tupla
 
+# Operadores
+São combinados com o WHERE para se usar uma busca mais eficiente
+diferente de -- !=  |  <>
+maior que -- >
+menor que -- <
+maior ou igual --  <=  |  >=
+menos --   -
+
 # Comandos
 
 *USE* - seleciona o banco de dados desejado   |     Ex: USE Banco_Exemplo
@@ -44,10 +52,9 @@ Ex: SELECT actor_id, first_name, last_name FROM actor ORDER BY first_name;
 - *asc* - do menor para maior
 - *desc* - do maior para o menor
 
-*WHERE* - direciona onde buscar o dado, passando oque deseja buscar, 
+*WHERE* - direciona onde buscar o dado, passando oque deseja buscar, tanto como  strings quanto valores númericos
 Ex: select * from actor where actor_id = 1;
-
-
+    select * from address where district = 'California';
 
 *AS* pode nomear uma tabela criada apartir de outra
 Ex: 
