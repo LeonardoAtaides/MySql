@@ -40,6 +40,17 @@ Ex: SELECT * FROM CLIENT
 *ORDER BY*- ordena os dados dentro de uma tabela , geralmente usado com select
 Ex: SELECT actor_id, first_name, last_name FROM actor ORDER BY first_name;
 
+- Temos como filtar pelo maior e menor  Ex: ORDER BT amount ( desc or asc )
+- *asc* - do menor para maior
+- *desc* - do maior para o menor
+
 *WHERE* - direciona onde buscar o dado, passando oque deseja buscar, 
 Ex: select * from actor where actor_id = 1;
 
+
+
+*AS* pode nomear uma tabela criada apartir de outra
+Ex: 
+select customer_id, amount,
+ amount  - (amount * 0.10) as '10% discount' -> passa o nome desejado
+ from payment where customer_id = 1;
