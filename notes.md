@@ -31,11 +31,22 @@ maior que -- >
 menor que -- <
 maior ou igual --  <=  |  >=
 menos --   -
-e --  AND
-ou -- OR
-não -- NOT com estado de negação
 
-Busca com *Operadores*:
+*AND* - um dado mais o outro
+Ex: select * from address where address_id AND city_id;
+
+
+*OR* - busca um dado ou outro
+Ex: SELECT * FROM address WHERE district OR city_id;
+
+
+*NOT* - nega toda a pesquisa, retorndo os valores diferentes do escolhido
+Ex: SELECT * FROM address WHERE NOT district IN ('Alberta', 'Texas');
+
+*IN*  - lista valores dentro de uma coluna
+Ex: SELECT * FROM address WHERE district IN ('Alberta', 'Texas');
+
+**Busca com *Operadores***:
 Ex: SELECT * FROM customer WHERE store_id = 1 AND active != 0;
 
 # Comandos
@@ -62,10 +73,9 @@ Ex: SELECT actor_id, first_name, last_name FROM actor ORDER BY first_name;
 Ex: SELECT * FROM actor where actor_id = 1;
     SELECT * FROM address where district = 'California';
 
-
-
-*AS* pode nomear uma tabela criada apartir de outra
+*AS* - pode nomear uma tabela criada apartir de outra
 Ex: 
 SELECT customer_id, amount,
  amount  - (amount * 0.10) AS '10% discount' -> passa o nome desejado
  FROM payment WHERE customer_id = 1;
+
