@@ -79,3 +79,5 @@ SELECT customer_id, amount,
  amount  - (amount * 0.10) AS '10% discount' -> passa o nome desejado
  FROM payment WHERE customer_id = 1;
 
+*BETWEEN* - serve para filtrar de onde dar inicio, seria como um "entre" 
+Ex: SELECT * FROM payment WHERE amout BETWEEN 1.99 AND 3.99;
