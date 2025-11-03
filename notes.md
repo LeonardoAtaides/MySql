@@ -81,3 +81,14 @@ SELECT customer_id, amount,
 
 *BETWEEN* - serve para filtrar de onde dar inicio, seria como um "entre" 
 Ex: SELECT * FROM payment WHERE amout BETWEEN 1.99 AND 3.99;
+
+
+*LIKE* - Analisa dentro de um campo, qual dado se inicia ou finaliza de acordo com a escolha, como um filtro
+
+Ex: SELECT * FROM actor WHERE first_name LIKE 'a'; -> faz a busca apenas da letra A
+
+- Para buscar algo que inicia com a letra desejada coloca %, que buscará algo que inicie com a letra desejada.
+Ex: SELECT * FROM actor WHERE first_name LIKE 'a%';
+
+- Passando do lado direito ele busca pela palavra que finaliza com a letra escolhida
+Ex: SELECT * FROM actor WHERE first_name LIKE '%c';
