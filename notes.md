@@ -92,3 +92,7 @@ Ex: SELECT * FROM actor WHERE first_name LIKE 'a%';
 
 - Passando do lado direito ele busca pela palavra que finaliza com a letra escolhida
 Ex: SELECT * FROM actor WHERE first_name LIKE '%c';
+
+*IS NULL* - Serve para denominar um campo vazio, aguarda receber um dado 
+Para puxar e verificar campos que estão vazios:
+Ex: SELECT * FROM address WHERE address2 IS NULL;
