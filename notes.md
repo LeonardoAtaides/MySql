@@ -108,3 +108,6 @@ Ex: SELECT * FROM actor WHERE first_name REGEXP '^a|^b|^c';
 
 _Pode buscar por combinação_ (Como ligação de chuveiro)
 Ex: SELECT * FROM actor WHERE first_name REGEXP '[ge]a';
+
+## INNER JOIN
+Serve para filtrar os dados de múltiplas tabelas, dando uma saida em tabela parecido com o do SELECT
