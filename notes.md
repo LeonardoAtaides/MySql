@@ -96,3 +96,15 @@ Ex: SELECT * FROM actor WHERE first_name LIKE '%c';
 *IS NULL* - Serve para denominar um campo vazio, aguarda receber um dado 
 Para puxar e verificar campos que estão vazios:
 Ex: SELECT * FROM address WHERE address2 IS NULL;
+
+*LIMIT* - Serve para listar de forma mais especifica, podendo escolher de onde começar
+Ex: SELECT * FROM actor LIMIT 2, 10;
+
+*REGEXP* - Serve para realizar um mix de várias expressões para ter um resultado eficiente, bem parecido com o a expressão like, mudando apenas os comandos
+Ex: SELECT * FROM actor WHERE first_name REGEXP '^a';
+
+_Pode busca por mais inicias_
+Ex: SELECT * FROM actor WHERE first_name REGEXP '^a|^b|^c';
+
+_Pode buscar por combinação_ (Como ligação de chuveiro)
+Ex: SELECT * FROM actor WHERE first_name REGEXP '[ge]a';
