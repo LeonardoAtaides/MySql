@@ -111,3 +111,18 @@ Ex: SELECT * FROM actor WHERE first_name REGEXP '[ge]a';
 
 ## INNER JOIN
 Serve para filtrar os dados de múltiplas tabelas, dando uma saida em tabela parecido com o do SELECT
+Ex: SELECT * FROM customer JOIN payment ON customer.customer_id = payment.payment_id LIMIT 10
+
+### FILTRO NO INNER JOIN
+Para isso puxa passando on prefixo da tabela, nome da tabela Ex: *Table.name_column*, como ficaria com o exemplo anterior
+Ex:
+SELECT 
+    customer.customer_id,
+    customer.first_name,
+    customer.last_name,
+    payment.rental_id,
+    payment.amount
+FROM customer
+JOIN payment ON customer.customer_id = payment.payment_id
+
+**A ORDEM IMPORTA DOS PREFIXOS, AO ALTERAR QUANDO E BUSCAR A COLUNA FICA DE ACORDO COM OQUE FOI PASSADO**
