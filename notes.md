@@ -126,3 +126,17 @@ FROM customer
 JOIN payment ON customer.customer_id = payment.payment_id
 
 **A ORDEM IMPORTA DOS PREFIXOS, AO ALTERAR QUANDO E BUSCAR A COLUNA FICA DE ACORDO COM OQUE FOI PASSADO**
+
+## ALIAS
+Serve para otimizar a escrita vai ser um apelido que é dado a tabela para realizar a chamada, apenas passando o apelido na frente do nome da tabela, _Ex: customer cus, payment pay_, ficando um código mais limpo e de fácil visualização
+Ex:
+SELECT 
+    cus.customer_id,
+    cus.first_name,
+    cus.last_name,
+    pay.rental_id,
+    pay.amount
+FROM customer cus
+ JOIN payment pay ON cus.customer_id = pay.payment_id
+
+ 
