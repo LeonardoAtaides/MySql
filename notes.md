@@ -155,3 +155,11 @@ VALUES
 (DEFAULT, 'English', '2002-02-24 02:06:12'),
 (DEFAULT, 'Italian', '2005-02-21 04:08:10')
 ;
+
+**INSERÇÃO MÚLTIPLA COM DUAS TABELAS**
+Ex:
+INSERT INTO country
+VALUES (DEFAULT, 'Brazil', '2008-02-20 05:02:19');
+INSERT INTO city
+VALUES (DEFAULT, 'São Paulo', last_insert_id(), '2005-02-21 05:02:19' );
+                                    |-> pega o último registro de id da tabela
