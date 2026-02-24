@@ -140,3 +140,10 @@ FROM customer cus
  JOIN payment pay ON cus.customer_id = pay.payment_id
 
  
+## INSERT 
+Serve para incluir valores a uma tabela
+Ex:
+        |-> para se referir para a tabela
+INSERT INTO language
+VALUES(DEFAULT, 'Portuguese', '2008-02-20 05:02:19');
+        |-> sem valor pois a tabela tem auto increment
