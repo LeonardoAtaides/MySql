@@ -147,3 +147,11 @@ Ex:
 INSERT INTO language
 VALUES(DEFAULT, 'Portuguese', '2008-02-20 05:02:19');
         |-> sem valor pois a tabela tem auto increment
+
+**PARA INSERÇÃO MÚLTIPLA E APENAS DUPLICAR E SEPARAR POR VÍRGULAS**
+EX:
+VALUES
+(DEFAULT, 'Spain', '2008-02-20 01:05:19'),
+(DEFAULT, 'English', '2002-02-24 02:06:12'),
+(DEFAULT, 'Italian', '2005-02-21 04:08:10')
+;
