@@ -169,3 +169,11 @@ Realiza uma copia da tabela, por alterações não seguras ou apenas como uma co
 Ex:
 CREATE TABLE payment_backup AS SELECT * FROM payment
                 |-> cria uma nova tabela com as informações de outra
+
+# REMOVER UMA TABELA
+Serve para remover uma tabela por completo, ou apenas parcialmente, apenas os dados
+Ex:
+DROP TABLE nome_da_tabela | apaga por completo
+TRUNCATE TABLE nome_da_tabela | apaga os dados dentro das colunas
+
+OBS: com o botão direito no workbench e possível apagar também, aparecendo essas opções
