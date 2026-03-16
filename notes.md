@@ -187,3 +187,14 @@ UPDATE payment SET amount = 5.99 WHERE payment_id = 1
 Serve para remover um valor dentro da 
 Ex:
 DELETE FROM payment WHERE payment_id = 8
+
+# FUNÇÕES 
+Servem para somar e realizar, calculos, formatações e etc
+pode-se encontrar mais em: https://www.w3schools.com/sql/sql_ref_sqlserver.asp
+Ex:
+SELECT 
+  MAX(amount) AS Maior,
+  MIN(amount) AS Menor,
+  AVG(amount) AS Media
+FROM payment 
+
