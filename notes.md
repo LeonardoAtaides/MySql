@@ -179,7 +179,11 @@ TRUNCATE TABLE nome_da_tabela | apaga os dados dentro das colunas
 OBS: com o botão direito no workbench e possível apagar também, aparecendo essas opções
 
 # ATUALIZAR UM VALOR (REGISTRO)
-Serve para atualizar um valor dentro da tabela do 
+Serve para atualizar um valor dentro da tabela 
 Ex:
-
 UPDATE payment SET amount = 5.99 WHERE payment_id = 1
+
+# DELETAR UM VALOR (REGISTRO)
+Serve para remover um valor dentro da 
+Ex:
+DELETE FROM payment WHERE payment_id = 8
