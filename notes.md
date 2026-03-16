@@ -163,3 +163,9 @@ VALUES (DEFAULT, 'Brazil', '2008-02-20 05:02:19');
 INSERT INTO city
 VALUES (DEFAULT, 'São Paulo', last_insert_id(), '2005-02-21 05:02:19' );
                                     |-> pega o último registro de id da tabela
+
+# COPIAR UMA TABELA - BACKUP
+Realiza uma copia da tabela, por alterações não seguras ou apenas como uma copia
+Ex:
+CREATE TABLE payment_backup AS SELECT * FROM payment
+                |-> cria uma nova tabela com as informações de outra
