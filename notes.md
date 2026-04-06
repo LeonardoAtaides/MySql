@@ -201,3 +201,27 @@ SELECT
 FROM payment 
 WHERE staff_id = 1
 
+# AGRUPAMENTO
+Serve para agrupar valores em um único local apartir de uma coluna
+Ex:
+SELECT
+   SUM(amount) AS total
+   FROM payment
+GROUP BY customer_id
+ORDER BY total DESC
+
+Ex2:
+SELECT
+ cus.customer_id,
+ cus.first_name AS Nome,
+ cus.last_name AS Sobrenome,
+ SUM(amount) AS total,
+ COUNT(amount) AS compras
+ 
+FROM payment pay
+JOIN customer cus USING(customer_id)
+GROUP BY customer_id
+HAVING total >= 150 AND compras >= 35
+ORDER BY total DESC
+
+
