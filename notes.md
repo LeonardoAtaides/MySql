@@ -195,6 +195,9 @@ Ex:
 SELECT 
   MAX(amount) AS Maior,
   MIN(amount) AS Menor,
-  AVG(amount) AS Media
+  AVG(amount) AS Media,
+  SUM(amount) AS 'Total de Vendas', - > realiza soma
+  COUNT(amount) AS 'Numero de Vendas' - > conta a quantidade
 FROM payment 
+WHERE staff_id = 1
 
