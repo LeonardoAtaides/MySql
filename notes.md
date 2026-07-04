@@ -225,3 +225,16 @@ HAVING total >= 150 AND compras >= 35
 ORDER BY total DESC
 
 
+# VIEWS
+E um basicamente um atalho para não se repetir código sql, criando uma tabela de visualização dentro **VIEWS** do WorkBench
+
+Ex: 
+CREATE VIEW vendas_por_cliente AS
+SELECT
+ cus.customer.id,
+ cus.first_name,
+ cus.lasy_name,
+ pay.amount
+FROM customer cus
+JOIN payment pay
+    ON cus.customer_id = pay.payment_id
