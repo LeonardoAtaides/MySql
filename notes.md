@@ -164,6 +164,12 @@ INSERT INTO city
 VALUES (DEFAULT, 'São Paulo', last_insert_id(), '2005-02-21 05:02:19' );
                                     |-> pega o último registro de id da tabela
 
+## ALTER TABLE
+Serve para incluir novas colunas na tabela
+Ex:
+ALTER TABLE tabela ADD coluna_nova VARCHAR(255)
+
+
 # COPIAR UMA TABELA - BACKUP
 Realiza uma copia da tabela, por alterações não seguras ou apenas como uma copia
 Ex:
