@@ -244,3 +244,54 @@ SELECT
 FROM customer cus
 JOIN payment pay
     ON cus.customer_id = pay.payment_id
+
+
+_Exemplo de Banco de Dados:_
+-- Criar Banco de Dados --
+create database carros;
+
+-- Criando Tabela de Marcas --
+create table marcas(
+	id int not null auto_increment,
+    nome_marcar varchar(255) not null,
+    primary key (id)
+);
+
+-- Inserindo uma coluna na tabela de Marcas --
+alter table marcas add origem varchar(255);
+
+-- Criando Tabela de Inventario --
+create table inventario(
+	id int not null auto_increment,
+    modelo varchar(255) not null,
+    transmissao varchar(255) not null,
+    motor varchar(255) not null,
+    combustivel varchar(255) not null,
+    marcas_id int not null,
+    primary key (id),
+    foreign key (marcas_id) references marcas(id)
+);
+
+-- Criando Tabela de Cliente --
+create table clientes(
+	id int not null auto_increment,
+    nome varchar(255) not null,
+    sobrenome varchar(255) not null,
+    endereco varchar(350),
+    primary key(id)
+);
+
+-- Inserindo Dados da tabela Cliente --
+insert into clientes(nome, sobrenome, endereco)
+values('Ataídes', 'Dev', 'Smpw Qd 13 Conj 7');
+select * from clientes;
+
+-- Inserindo Dados da tabela Marcas --
+insert into marcas(nome_marcar)
+values('Chevrolet');
+select * from marcas;
+
+-- Inserindo Dados da tabela Iventário --
+insert into inventario(modelo, transmissao, motor, combustivel, marcas_id)
+values('CELTA','Manual', '1.0','Flex', 1);
+select * from inventario;
