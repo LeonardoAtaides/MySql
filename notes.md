@@ -246,6 +246,15 @@ JOIN payment pay
     ON cus.customer_id = pay.payment_id
 
 
+# CRIANDO USUÁRIO NO MYSQL
+CREATE USER nome_usuario IDENTIFIED BY 'senha123';
+
+## REMOVENDO USUÁRIO
+DROP USER nome_usuario
+
+## RECUPERAR SENHA DE USUÁRIO
+SET PASSWORD FOR nome_usuario = 'novasenha123'
+
 _Exemplo de Banco de Dados:_
 -- Criar Banco de Dados --
 create database carros;
